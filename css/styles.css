@@ -7,6 +7,7 @@
 :root {
     --primary-color: #E71A23;
     --secondary-color: #104E92;
+    --gray-color: #999;
 }
 
 html {
@@ -151,7 +152,7 @@ h1 strong {
     font-size: 4rem;
 }
 
-.icons {
+.div-icons {
     display: flex;
     margin: 10px 0;
 }
@@ -170,6 +171,55 @@ h1 strong {
     margin: 3px 0;
 }
 
+.section-one {
+    padding: 40px 0;
+    background-color: #f2f2f2;
+    text-align: center;
+}
+
+.medium-text {
+    font-size: 3.5rem;
+}
+
+.big-text {
+    font-size: 4rem;
+}
+
+.small-text {
+    font-size: 2.8rem;
+}
+
+.section-one h3 {
+    font-size: 18px;
+    text-transform: uppercase;
+    color: var(--gray-color);
+}
+
+.h2 {
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+    color: black;
+    margin: 20px 0;
+    margin-bottom: 10px;
+}
+
+.section-one p {
+    font-size: 1.4rem;
+    max-width: 900px;
+    margin: 0 auto;
+    line-height: 1.5;
+    color: var(--gray-color);
+}
+
+.button-red {
+    font-size: 12px;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 15px 30px;
+    background-color: var(--primary-color);
+    border: 0;
+    margin: 20px 0;
+}
 
 @media screen and (min-width:600px) {
     html {
@@ -215,7 +265,7 @@ h1 strong {
         margin: 0 auto;
     }
     
-    .icons {
+    .div-icons {
         margin: 10px auto;
     }
 
