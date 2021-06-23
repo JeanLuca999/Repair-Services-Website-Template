@@ -252,9 +252,10 @@ button:hover, button:focus {
 }
 
 .section-contact div p {
-    font-size: 16px;
+    font-size: 1.4rem;
     margin: 10px 0;
     color: var(--gray-color);
+    line-height: 1.5;
 }
 
 .section-contact div a {
@@ -270,6 +271,53 @@ button:hover, button:focus {
     font-size: 2.1rem;
     font-weight: bold;
     color: var(--primary-color);
+}
+
+.section-service-quality {
+    background-image: linear-gradient(to top, #bcb9c0, #d8d6db);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+
+    max-width: 800px;
+    width: 90%;
+    height: auto;
+    margin: 0 auto;
+}
+
+.section-service-quality h2 {
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--secondary-color);
+}
+
+.section-service-quality hr {
+    width: 100%;
+    height: 10px;
+    margin: 20px 0;
+    background-color: var(--primary-color);
+}
+
+.section-service-quality p {
+    font-size: 1.4rem;
+    color: #111;
+    line-height: 1.5;
+    width: 90%;
+}
+
+.section-service-quality div {
+    margin: 0 auto;
+}
+
+.section-service-quality div img {
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
 }
 
 @media screen and (min-width:600px) {
@@ -351,5 +399,9 @@ button:hover, button:focus {
 
         grid-template-areas: "photo1 contact-div"
                              "paragraph photo2";
+    }
+
+    .container{
+        flex-direction: row;
     }
 }
