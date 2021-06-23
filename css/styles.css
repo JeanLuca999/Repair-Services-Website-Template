@@ -130,7 +130,7 @@ header nav ul li a:hover {
     background-size: cover;
     background-repeat: no-repeat;
     height: 80vh;
-    padding-left: 20px;
+    padding-left: 10px;
 }
 
 h1 {
@@ -152,6 +152,7 @@ h1 strong {
 }
 
 .icons {
+    display: flex;
     margin: 10px 0;
 }
 
@@ -159,6 +160,7 @@ h1 strong {
     color: #fff;
     font-size: 1.6rem;
     font-style: italic;
+    margin-right: 20px;
 }
 
 .icon {
@@ -197,9 +199,11 @@ h1 strong {
         padding-bottom: 10px;
     }
 
-    header nav ul li a:hover {
+    header nav ul li a:hover, a:focus {
         background-color: transparent;
         text-shadow: 2px 2px 5px black;
+        border-radius: initial;
+        border-bottom: 1px solid white;
     }
 
     .banner {
@@ -210,6 +214,10 @@ h1 strong {
         max-width: 400px;
         margin: 0 auto;
     }
+    
+    .icons {
+        margin: 10px auto;
+    }
 
     .icon-container {
         text-align: center;
@@ -218,4 +226,5 @@ h1 strong {
     .icon {
         margin: 0 auto;
     }
+
 }
