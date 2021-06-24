@@ -10,8 +10,8 @@ menuButton.addEventListener('click', () => {
 
 links.forEach(link => {
     link.addEventListener('click', () => {
-        menuButton.classList.toggle('menu-clicked')
-        menuItems.classList.toggle('active')
+        menuButton.classList.remove('menu-clicked')
+        menuItems.classList.remove('active')
         document.body.classList.remove('body-overflow-hidden')
     })
 })

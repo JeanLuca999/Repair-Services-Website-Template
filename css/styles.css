@@ -374,6 +374,73 @@ button:hover, button:focus {
     margin-top: 20px;
 }
 
+.section-about-us {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--secondary-color);
+    padding: 30px 0;
+    padding-bottom: 100px;
+}
+
+.section-about-us .container-about {
+    width: 90%;
+    max-width: 980px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.section-about-us .container-about h3 {
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.section-about-us .container-about h2 {
+    color: #fff;
+    margin: 5px auto;
+    max-width: 350px;
+}
+
+.section-about-us .container-about-grid-images {
+    display: grid;
+    grid-template-columns: minmax(250px,400px);
+    grid-template-columns: repeat(minmax(250px,320px), 2);
+    justify-content: center;
+}
+
+.section-about-us .container-about-grid-images img {
+    width: 100%;
+    height: 100%;
+    padding: 5px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.section-address {
+    padding: 30px 0;
+    height: auto;
+    min-height: 500px;
+    background-image: linear-gradient(to bottom, #1f4670,#142e49);
+}
+
+.section-address h2 {
+    color: #fff;
+    text-align: center;
+    border-bottom: 10px solid #fff;
+    padding: 20px;
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+.section-address iframe {
+    display: block;
+    margin: 0 auto;
+    width: 95%;
+    max-width: 600px;
+}
+
 @media screen and (min-width:600px) {
     html {
         font-size: 14px;
@@ -463,4 +530,10 @@ button:hover, button:focus {
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: 1fr;
     }
+
+    .section-about-us .container-about-grid-images {
+        grid-template-columns: minmax(250px,400px) minmax(250px,400px);
+        grid-template-columns: repeat(minmax(250px,400px), 2);
+    }
+
 }
